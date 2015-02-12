@@ -10,4 +10,7 @@
 
 @interface JxbCircleLoading : UIView
 
+
+- (void)start;
+- (void)stop;
 @end

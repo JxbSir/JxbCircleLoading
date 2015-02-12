@@ -14,6 +14,7 @@
 		D038FAF01A8B355B008E2824 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D038FAEF1A8B355B008E2824 /* Images.xcassets */; };
 		D038FAF31A8B355B008E2824 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D038FAF11A8B355B008E2824 /* LaunchScreen.xib */; };
 		D038FAFF1A8B355B008E2824 /* JxbCircleLoadingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D038FAFE1A8B355B008E2824 /* JxbCircleLoadingTests.m */; };
+		D038FB0B1A8B35FA008E2824 /* JxbCircleLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = D038FB0A1A8B35FA008E2824 /* JxbCircleLoading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		D038FAF81A8B355B008E2824 /* JxbCircleLoadingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JxbCircleLoadingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D038FAFD1A8B355B008E2824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D038FAFE1A8B355B008E2824 /* JxbCircleLoadingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JxbCircleLoadingTests.m; sourceTree = "<group>"; };
+		D038FB091A8B35FA008E2824 /* JxbCircleLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JxbCircleLoading.h; path = JxbCircleLoading/JxbCircleLoading.h; sourceTree = "<group>"; };
+		D038FB0A1A8B35FA008E2824 /* JxbCircleLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JxbCircleLoading.m; path = JxbCircleLoading/JxbCircleLoading.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		D038FAE11A8B355B008E2824 /* JxbCircleLoading */ = {
 			isa = PBXGroup;
 			children = (
+				D038FB081A8B3565008E2824 /* JxbCirCleLoading */,
 				D038FAE61A8B355B008E2824 /* AppDelegate.h */,
 				D038FAE71A8B355B008E2824 /* AppDelegate.m */,
 				D038FAE91A8B355B008E2824 /* ViewController.h */,
@@ -117,6 +121,15 @@
 				D038FAFD1A8B355B008E2824 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D038FB081A8B3565008E2824 /* JxbCirCleLoading */ = {
+			isa = PBXGroup;
+			children = (
+				D038FB091A8B35FA008E2824 /* JxbCircleLoading.h */,
+				D038FB0A1A8B35FA008E2824 /* JxbCircleLoading.m */,
+			);
+			name = JxbCirCleLoading;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D038FAEB1A8B355B008E2824 /* ViewController.m in Sources */,
+				D038FB0B1A8B35FA008E2824 /* JxbCircleLoading.m in Sources */,
 				D038FAE81A8B355B008E2824 /* AppDelegate.m in Sources */,
 				D038FAE51A8B355B008E2824 /* main.m in Sources */,
 			);

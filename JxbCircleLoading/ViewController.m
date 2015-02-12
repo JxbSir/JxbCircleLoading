@@ -7,21 +7,46 @@
 //
 
 #import "ViewController.h"
+#import "JxbCircleLoading.h"
 
 @interface ViewController ()
-
+{
+    JxbCircleLoading* loading;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    loading = [[JxbCircleLoading alloc] init];
+    loading.frame = CGRectMake(100, 100, 50, 50);
+    [self.view addSubview:loading];
+
+    UIButton* btn1 = [[UIButton alloc] initWithFrame:CGRectMake(100, 300, 100, 40)];
+    [btn1 addTarget:self action:@selector(aaa) forControlEvents:UIControlEventTouchUpInside];
+    [btn1 setTitle:@"start" forState:UIControlStateNormal];
+    [btn1 setBackgroundColor:[UIColor grayColor]];
+    [self.view addSubview:btn1];
+    
+    UIButton* btn2 = [[UIButton alloc] initWithFrame:CGRectMake(220, 300, 100, 40)];
+    [btn2 addTarget:self action:@selector(bbb) forControlEvents:UIControlEventTouchUpInside];
+    [btn2 setTitle:@"stop" forState:UIControlStateNormal];
+    [btn2 setBackgroundColor:[UIColor grayColor]];
+    [self.view addSubview:btn2];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)aaa
+{
+    [loading start];
+}
+
+- (void)bbb
+{
+    [loading stop];
 }
 
 @end
