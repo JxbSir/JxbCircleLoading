@@ -2,4 +2,4 @@
 a circle loading view ，like uiactivityindicatorview
 
 
-![](http://www.baidu.com/img/bdlogo.gif)  
+![](https://raw.githubusercontent.com/JxbSir/JxbCircleLoading/master/JxbCircleLoading/images/loading.gif)  
